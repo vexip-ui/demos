@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "allowJs": false,
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "isolatedModules": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "outDir": "dist",
+    "types": [
+      "vite/client",
+      "vexip-ui/types"
+    ]
+  },
+  "include": [
+    "src",
+    "auto-imports.d.ts",
+    "components.d.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
